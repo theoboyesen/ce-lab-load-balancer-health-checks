@@ -1,0 +1,13 @@
+Health Check Protocol: HTTP
+Health Check Path: /health
+Health Check Port: Traffic port (80)
+
+Interval: 30 seconds
+Timeout: 5 seconds
+Healthy Threshold: 5 consecutive successes
+Unhealthy Threshold: 2 consecutive failures
+Success Codes: 200
+
+Rationale:
+The /health endpoint allows the load balancer to automatically detect
+unhealthy instances and remove them from traffic rotation without manual intervention.

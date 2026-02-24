@@ -1,0 +1,11 @@
+Listener Protocol: HTTP
+Listener Port: 80
+
+Default Rule:
+- Forward all incoming traffic to the application target group
+
+Routing Behavior:
+All requests received by the Application Load Balancer on port 80
+are forwarded to the application tier target group.
+
+No additional path-based or host-based routing rules are configured.

@@ -1,0 +1,14 @@
+Target Group Name: app-target-group
+Target Type: Instance
+Protocol: HTTP
+Port: 80
+VPC: Three-tier project VPC
+
+Registered Targets:
+- app-instance-1 (AZ A)
+- app-instance-2 (AZ B)
+- app-instance-3 (AZ A)
+
+Purpose:
+The target group connects the Application Load Balancer to the application tier.
+Only instances that pass health checks are eligible to receive traffic.
